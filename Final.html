@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asteroid Shooter Game</title>
+    <meta charset="UTF-8">
+    <script src="Finalp5min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: rgb(246, 245, 245);
+            font-family: sans-serif;
+        }
+        #startContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 130vh;
+            background: url('StartScreen.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #startButton {
+            padding: 10px 20px;
+            background: cyan;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .instructions {
+            font-size: 20px;
+            color: rgb(110, 76, 235);
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="startContainer">
+        <div class="instructions">
+            <p>Welcome to Asteroid Shooter!</p>
+            <p>Controls:</p>
+            <ul>
+                <li>Move your spaceship with the mouse.</li>
+                <li>Shoot asteroids by clicking the left mouse button.</li>
+                <li>Survive and score points by dodging asteroids!</li>
+            </ul>
+        </div>
+        <button id="startButton">Start Game</button>
+    </div>
+    <script src="FinalSketch.js"></script>
+</body>
+</html>
